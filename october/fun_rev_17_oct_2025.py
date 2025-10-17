@@ -3,7 +3,7 @@ def read_number():
     if len(num)>=4 and num.isdigit():
         return int(num)                
     else:
-        print("invalid number.Try again")
+        print("invalid number.Try a number of minimum 4 digits")
         return read_number()
 def reverse(num):
     rev=0
@@ -18,3 +18,4 @@ print("the original number is:", number)
 print("the reverse of number is:", reverse)
 
         
+
