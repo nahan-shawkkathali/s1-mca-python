@@ -1,10 +1,19 @@
 
-import area_module   
-length = float(input("Enter the length of the rectangle: "))
-width = float(input("Enter the width of the rectangle: "))
-radius = float(input("Enter the radius of the circle: "))
-rect_area = area_module.area_rectangle(length, width)
-circle_area = area_module.area_circle(radius)
-print("\nAreas Calculated:")
-print(f"Area of Rectangle = {rect_area}")
-print(f"Area of Circle = {circle_area:.2f}")
+from graphics import rectangle, circle
+from graphics.threeD_graphics import cuboid, sphere
+
+print("Rectangle:")
+print("Area =", rectangle.area(10, 5))
+print("Perimeter =", rectangle.perimeter(10, 5))
+
+print("\nCircle:")
+print("Area =", circle.area(7))
+print("Perimeter =", circle.perimeter(7))
+
+print("\nCuboid:")
+print("Surface Area =", cuboid.surface_area(2, 3, 4))
+print("Perimeter =", cuboid.perimeter(2, 3, 4))
+
+print("\nSphere:")
+print("Surface Area =", sphere.surface_area(5))
+print("Perimeter =", sphere.perimeter(5))
